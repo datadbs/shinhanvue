@@ -9,12 +9,9 @@
           </div>
           <ul class="list">
             <li v-for="todo in todos" :key="todo.text">
-              <i class="far fa-check-square"></i>
+              <i :class="[todo.state === 'yet' ? 'far':'fas','fa-check-square']"></i>
               <span>
-                <li>
-                  <p>{{todo.text}}</p>
-                  <p>{{todo.state}}</p>
-                </li>
+                  {{todo.text}}
                 <b>
                   <a href="">Edit</a>
                   <a href="">Del</a>
