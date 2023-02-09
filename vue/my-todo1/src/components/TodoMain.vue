@@ -12,8 +12,8 @@
               <i class="far fa-check-square"></i>
               <span>
                 <li>
-                  <b>{{todo.text}}</b>
-                  <b>{{todo.state}}</b>
+                  <p>{{todo.text}}</p>
+                  <p>{{todo.state}}</p>
                 </li>
                 <b>
                   <a href="">Edit</a>
